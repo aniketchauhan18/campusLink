@@ -7,16 +7,18 @@ import logoWhite from '../../public/electrothon.png'
 
 function Home() {
 
-
   const { user } = useAuth0();
+
+  const buttonClasses = "bg-zinc-300  text-gray-900 py-1 px-3 rounded"
   return (
     <div className="flex flex-col justify-between min-h-screen">
-      <div className="font-lato flex flex-col justify-center items-center text-6xl w-full p-5 h-screen text-black bg-zinc-300"
+      <div className="font-lato flex flex-col justify-center items-center text-6xl w-full h-screen text-black bg-zinc-300"
       style={{
         backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://plus.unsplash.com/premium_photo-1661488246595-7f21bf98b7cb?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
         backgroundSize: 'cover'
       }}>
         <div
+          className="w-full h-full flex justify-center items-center"
           style={{
             backdropFilter: 'blur(5px)'
           }}
@@ -24,12 +26,12 @@ function Home() {
           <div 
             className="flex justify-between gap-10 items-center rounded-sm text-white"
           >
-            <div className="mb-4 font-bold flex flex-col justify-center items-center pt-36 pb-36">
+            <div className="mb-4 font-bold flex flex-col justify-center items-center">
               <div className="flex flex-col p-2">
                 <div
                   className="flex justify-center items-center"
                 >
-                  <p className="flex justify-center items-center text-8xl text-gray-300">
+                  <p className="flex reveal-animation justify-center items-center text-9xl text-gray-200">
                     CAMPUSLINK
                   </p>
                   <img 
@@ -38,8 +40,8 @@ function Home() {
                     className='h-36'
                   />
                 </div>
-                <div className="text-sm mb-8 p-2">
-                  We promotes a vibrant community with events, clubs, and a lost and found platform. Students can use the college events scheduler to stay updated, the lost and found platform to reclaim items, and participate in club discussions and meetings in diverse club rooms.
+                <div className="text-4xl flex justify-center items-center mb-8  p-2">
+                  Connect, Collaborate & Create
                 </div>
               </div>
             </div>
@@ -61,18 +63,19 @@ function Home() {
           <div 
             className="flex flex-col p-10  h-60"
             style={{
-              backdropFilter: 'blur(1px)'
+              backdropFilter: 'blur(3px)'
             }}
           >
             <div className="flex justify-start  mb-2 text-xl font-bold ">
               Lost and Found Rooms
             </div>
-            <div>
+            <div
+            >
               Misplaced something important? No worries! Navigate through our Lost and Found Rooms, where fellow students and staff post discoveries and search requests. Find what you've lost or lend a helping hand—it's all about community support.
             </div>
             <div className="flex justify-end mr-1 mt-2">
               <Link 
-                className="bg-zinc-700 px-5 py-1   hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-zinc-100 focus:border-transparent transition duration-300 ease-in-out flex justify-center items-center text-white text-md rounded-sm"
+                className={buttonClasses}
                 to={user ? "/lostquery" : {}}
               >
                 Join
@@ -100,7 +103,7 @@ function Home() {
             </div>
             <div className="flex justify-end mr-1 mt-2">
               <Link 
-                className="bg-zinc-700 px-5 py-1   hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-zinc-100 focus:border-transparent transition duration-300 ease-in-out flex justify-center items-center text-white text-md rounded-sm"
+                className={buttonClasses}
                 to={user ? "/groups" : {}}
               >
                 Join
@@ -115,9 +118,9 @@ function Home() {
           }}
         >
           <div 
-            className="flex flex-col p-10 "
+            className="flex flex-col p-10"
             style={{
-              backdropFilter: 'blur(1px)'
+              backdropFilter: 'blur(2px)'
             }}
           >
             <div className="flex justify-start  mb-2 text-xl font-bold">
@@ -128,7 +131,7 @@ function Home() {
             </div>
             <div className="flex justify-end mr-1 mt-2">
               <Link 
-                className="bg-zinc-700 px-5 py-1   hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-zinc-100 focus:border-transparent transition duration-300 ease-in-out flex justify-center items-center text-white text-md rounded-sm"
+                className={buttonClasses}
                 to={user ? "/scheduler" : {}}
               >
                 Join

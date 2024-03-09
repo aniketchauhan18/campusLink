@@ -39,7 +39,7 @@ const MyCalendar = () => {
         College Events
       </div>
       <Divider orientation='horizontal' className='mb-10' />
-      <div className='flex'>
+      <div className='flex justify-center items-center gap-10'>
         <Calendar
           localizer={localizer}
           events={events}
@@ -62,7 +62,7 @@ const MyCalendar = () => {
         />
         <div className='flex justify-center items-center w-1/2 h-auto bg-zinc-300 ml-1 mr-2 rounded-md text-white'>
           {showEvent && (
-            <div className='flex justify-center items-center w-3/4 flex-col'>
+            <div className='flex justify-center items-center w-3/4 flex-col p-3'>
               <div className=' mb-5 text-xl text-zinc-800 font-bold font-raleway'>
                 {selectedEvent.title}
               </div>

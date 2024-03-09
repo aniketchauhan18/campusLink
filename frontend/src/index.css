@@ -2,9 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @keyframes typing {
   from { width: 0; }
   to { width: 100%; }
+}
+
+.lost-heading {
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 300;
+  font-style: normal;
 }
 
 .typing::after {
@@ -34,5 +41,23 @@
 
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lato&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap')
+@layer utilities {
+  .gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+@keyframes reveal {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+.reveal-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: reveal 2s steps(40, end) forwards;
+}
+
 

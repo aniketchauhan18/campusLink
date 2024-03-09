@@ -51,9 +51,14 @@ function LostFound() {
 
   return (
     <div className='flex justify-center w-full items-center text-black h-screen'>
-      <p className='text-6xl font-bold m-10 mr-10 w-1/2 flex justify-center items-center'>
-        YOU LOST ?
-      </p>
+      <div className='flex justify-center items-center flex-col'>
+        <p className='text-6xl text-zinc-700 m-10 mr-10 w-1/2 flex justify-center items-center lost-heading'>
+          LOST & FOUND
+        </p>
+        <p className='w-1/2'>
+        Have you lost something important? Or perhaps found an item and want to return it to its owner? You're in the right place! Please fill out the form below with the details of the lost or found item.
+        </p>
+      </div>
       <Divider orientation='vertical' height='400px'/>
       <div className='flex flex-col justify-center items-center p-10 w-1/2 mr-10'>
         <form 
@@ -107,10 +112,7 @@ function LostFound() {
             </button>
           </FormControl>
         </form>
-        
-        
       </div>
-      
     </div>
   )
 }

@@ -61,10 +61,10 @@ function Chats() {
   }
   
   return (
-    <div className='bg-white h-screen mt-10 flex justify-center items-center p-20 pb-20 text-black'>
+    <div className='bg-zinc-900 h-full flex justify-center items-center text-black'>
       <div className='flex flex-col border m-3 h-screen w-full m-3 rounded mb-20'>
         <div className='flex p-3 justify-between items-center'>
-          <div className='text-2xl text-zinc-700'>
+          <div className='text-4xl text-white'>
             CHAT ROOMS
           </div>
           <Link 
@@ -94,26 +94,44 @@ function Chats() {
               </div>
             </div>
           </div>
-          <div className='w-4/5 h-full p-2 flex flex-col justify-end'>
-            <div className='overflow-y-auto max-h-96 'ref={messagesRef}>
-              {sentMessages.map((message, index) => {
-                return (
-                  <div key={index} className='bg-zinc-100 p-2 rounded-md m-2 flex flex-col justify-between'>
-                    <div className='flex gap-1'>
-                      <span className='text-zinc-800'>
-                        {message.username}:
-                      </span>
-                      <div>
-                        {message.text}
+          <div 
+            className='w-4/5 h-full p-2 flex flex-col justify-end rounded-md'
+            style={{
+              backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+              backgroundSize: 'cover',
+            }}
+          >
+            <div
+              style={{
+                backdropFilter: 'blur(1px)'
+              }}
+            >
+              <div 
+                className='overflow-y-auto max-h-96 'ref={messagesRef}
+              >
+                {sentMessages.map((message, index) => {
+                  return (
+                    <div key={index} className='bg-gray-50 bg-opacity-30 text-white p-2 rounded-md m-2 flex flex-col justify-between'>
+                      <div 
+                        className='flex gap-1'
+                        
+                      >
+                        <span className='text-zinc-300'>
+                          {message.username}:
+                        </span>
+                        <div>
+                          {message.text}
+                        </div>
+                      </div>
+                      <div className='h-1/5  inline-block py-0.5 px-1 rounded text-sm self-end'>
+                        {message.time}
                       </div>
                     </div>
-                    <div className='h-1/5  inline-block py-0.5 px-1 rounded text-sm self-end'>
-                      {message.time}
-                    </div>
-                  </div>
-                )
-              })}
+                  )
+                })}
+              </div>
             </div>
+            
             <form 
               className='items-center w-full justify-end flex'
               onSubmit={handleSubmit}
