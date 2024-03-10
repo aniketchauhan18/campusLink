@@ -76,17 +76,17 @@ function Chats() {
         </div>
         <div className='h-full p-3 flex gap-3'>
           <div className='w-1/5 bg-zinc-300 h-full p-1 rounded'>
-            <div className='flex justify-start bg-zinc-600 text-white p-2 rounded mb-10'>
+            <div className='flex justify-start bg-zinc-900 text-white p-2 rounded mb-10'>
               {roomName}
             </div>
             <div className='flex flex-col justify-start text-black p-2 rounded bg-zinc-200'>
-              <div className='bg-zinc-400 p-2 rounded text-xl '>
+              <div className='bg-zinc-900 text-white p-2 rounded text-xl '>
                 Users
               </div>
               <div className='mt-2'>
                 {roomUsers.map((user, index) => {
                   return (
-                    <div key={index} className='bg-zinc-200 text-black p-2 rounded mt-2'>
+                    <div key={index} className='bg-zinc-500 text-white  p-2 rounded mt-2'>
                       {user.username}
                     </div>
                   )
@@ -97,13 +97,13 @@ function Chats() {
           <div 
             className='w-4/5 h-full p-2 flex flex-col justify-end rounded-md'
             style={{
-              backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-              backgroundSize: 'cover',
+              backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1494768788897-7fdaa00de2a1?q=80&w=1638&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)',
+              backgroundSize: 'cover'
             }}
           >
             <div
               style={{
-                backdropFilter: 'blur(1px)'
+                backdropFilter: 'blur(100px)'
               }}
             >
               <div 
@@ -131,7 +131,6 @@ function Chats() {
                 })}
               </div>
             </div>
-            
             <form 
               className='items-center w-full justify-end flex'
               onSubmit={handleSubmit}

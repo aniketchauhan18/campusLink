@@ -94,12 +94,12 @@ function MessReview() {
             onChange={(e) => setHostel(e.target.value)}
           >
             <option value="">Select your hostel</option>
-            <option value="kailash Boys Hostel">Parvati Girls Hostel</option>
+            <option value="Parvati Boys Hostel">Parvati Girls Hostel</option>
             <option value="Ambika Girls Hostel">Ambika Girls Hostel</option>
-            <option value="Ambika Girls Hostel">Kailash Boys Hostel</option>
-            <option value="Ambika Girls Hostel">Himadri Boys Hostel</option>
-            <option value="Ambika Girls Hostel">Udaygiri Boys Hostel</option>
-            <option value="Ambika Girls Hostel">Neelkhanth Boys Hostel</option>
+            <option value="Kailash Girls Hostel">Kailash Boys Hostel</option>
+            <option value="Himadri Girls Hostel">Himadri Boys Hostel</option>
+            <option value="Udaygiri Girls Hostel">Udaygiri Boys Hostel</option>
+            <option value="Neelkanth Girls Hostel">Neelkhanth Boys Hostel</option>
             {/* Add more options as needed */}
           </Select>
           <button 

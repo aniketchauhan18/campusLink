@@ -56,7 +56,7 @@ function Home() {
       <Divider orientation="horizontal"/>
       <div className="flex w-full">
         <div className="text-8xl font-bold w-full flex justify-center items-center">
-          Chat with Bot
+          Chat with <span className="bg-black text-white rounded py-1 px-3">Bot</span>
         </div>
         <iframe 
         className="w-full"
