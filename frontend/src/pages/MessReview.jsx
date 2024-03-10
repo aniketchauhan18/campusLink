@@ -80,7 +80,7 @@ function MessReview() {
           />
           <Textarea 
             className={inputClasses}
-            placeholder='Enter your review'
+            placeholder='Write your review'
             required
             variant='flushed'
             value={description}
@@ -94,8 +94,12 @@ function MessReview() {
             onChange={(e) => setHostel(e.target.value)}
           >
             <option value="">Select your hostel</option>
-            <option value="python">Kailash Boys Hostel</option>
-            <option value="javascript">Ambika Girls Hostel</option>
+            <option value="kailash Boys Hostel">Parvati Girls Hostel</option>
+            <option value="Ambika Girls Hostel">Ambika Girls Hostel</option>
+            <option value="Ambika Girls Hostel">Kailash Boys Hostel</option>
+            <option value="Ambika Girls Hostel">Himadri Boys Hostel</option>
+            <option value="Ambika Girls Hostel">Udaygiri Boys Hostel</option>
+            <option value="Ambika Girls Hostel">Neelkhanth Boys Hostel</option>
             {/* Add more options as needed */}
           </Select>
           <button 

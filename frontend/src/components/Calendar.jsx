@@ -36,8 +36,8 @@ const MyCalendar = () => {
  
   return (
     <div className='w-full mt-10 p-4 flex flex-col gap-4  h-screen'>
-      <div className='flex justify-center text-zinc-600 items-center  text-8xl font-bold mb-10'>
-        College Events
+      <div className='flex justify-center text-zinc-700 items-center  text-8xl font-bold mb-10'>
+        Discover College Events
       </div>
       <Divider orientation='horizontal' className='mb-10' />
       <div className='flex justify-center items-center gap-10'>
@@ -61,10 +61,10 @@ const MyCalendar = () => {
           }}
           views={['month', 'agenda']}
         />
-        <div className='flex justify-center  items-center w-1/2 h-auto bg-zinc-300 ml-1 mr-2 rounded-md text-white scheduler-text'>
+        <div className='flex justify-center  items-center w-1/2 h-auto bg-zinc-200 ml-1 mr-2 rounded-md text-white scheduler-text'>
           {showEvent && (
             <div className='flex justify-center items-center w-3/4 flex-col p-3'>
-              <div className=' mb-5 text-xl text-zinc-500 font-bold font-raleway'>
+              <div className=' mb-5 text-xl text-zinc-500 scheduler-title'>
                 {selectedEvent.title}
               </div>
               <img src={selectedEvent.image} className='w-3/4  rounded-md shadow transform hover:scale-105 transition ease-in-out duration-300 '/>

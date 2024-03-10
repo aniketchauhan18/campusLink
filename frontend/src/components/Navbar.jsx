@@ -11,7 +11,7 @@ function Navbar() {
 
   return (
     <div className=' font-roboto  flex justify-center flex-col items-center w-full text-zinc-900 '>
-      <nav className=' flex justify-between pl-3 pr-3 w-full bg-gray-200 rounded nav-bar'>
+      <nav className=' flex justify-between pl-3 pr-3 w-full bg-gray-200 nav-bar'>
         <Link className='flex justify-center items-center text-xl'
           to={'/'}
         >

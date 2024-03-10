@@ -48,7 +48,7 @@ function LostListPage() {
                 <strong>Item Description: </strong>{foundItem.description}
                 </p>
                 <p>
-                <strong>Found Date: </strong>{foundItem.date.split('T')[0]}
+                <strong>Lost Date: </strong>{foundItem.date.split('T')[0]}
                 </p>
               </div>
             </div>)
