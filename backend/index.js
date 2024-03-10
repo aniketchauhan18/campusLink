@@ -8,6 +8,7 @@ const formatMessages = require('./utils/messages');
 const {userJoin, getCurrentUser, getRoomUsers, userLeave} = require('./utils/users')
 const lostRoutes = require('./routes/lost')
 const foundRoutes = require('./routes/found')
+const messReviewRoutes = require('./routes/messReview')
 
 
 app.use(cors());
@@ -17,6 +18,7 @@ const server = http.createServer(app); // create the server
 app.use('/groups', groupRoutes);
 app.use('/lost', lostRoutes);
 app.use('/found',foundRoutes)
+app.use('/mess', messReviewRoutes);
 
 
 const io = new Server(server, {

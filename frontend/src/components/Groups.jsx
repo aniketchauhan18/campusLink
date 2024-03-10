@@ -24,7 +24,7 @@ function Groups() {
     }
   }
 
-  const inputClasses = "border-2"
+  const inputClasses = ""
   return (
     <div className='flex justify-center items-center text-zinc-700 h-screen'
       style={{
@@ -34,10 +34,10 @@ function Groups() {
       }}
     >
       <div 
-        className='text-6xl font-bold mb-10 flex justify-center items-center w-1/2 text-white mr-2'
+        className='text-8xl font-bold mb-10 flex justify-center items-center w-1/2 text-white mr-2 group-title'
         
       >
-        GROUP ROOMS
+        COMMUNITIES
       </div>
       <Divider orientation='vertical' height='400px' className='mr-10'/>
       <div className='flex justify-center items-center w-1/2 '>
@@ -48,22 +48,22 @@ function Groups() {
             placeholder='Enter username...'
             value={username}
             required
-            variant='outline'
+            variant='flushed'
           />
           <Select 
             onChange={(e) => setRoom(e.target.value)}
             className={inputClasses}
             value={room}
             required
-            variant='outline'
+            variant='flushed'
           >
-            <option value="">Select a room...</option>
+            <option value="">Select a community...</option>
             <option value="python">Python</option>
             <option value="javascript">JavaScript</option>
             {/* Add more options as needed */}
           </Select>
           <Link {...(allowLink ? {to: `/chats?username=${username}&room=${room}`} : {})}
-            className='border border-white p-1 bg-zinc-700 rounded  hover:bg-zinc-500 focus:outline-none focus:ring-2 focus:ring-zinc-100 focus:border-transparent transition duration-300 ease-in-out flex justify-center items-center text-white text-md rounded-md cursor-pointer'
+            className='border border-white p-1 bg-zinc-700 rounded  hover:bg-zinc-500 focus:flushed-none focus:ring-2 focus:ring-zinc-100 focus:border-transparent transition duration-300 ease-in-out flex justify-center items-center text-white text-md rounded-md cursor-pointer'
             type='submit'
             onClick={handleLink}
           >

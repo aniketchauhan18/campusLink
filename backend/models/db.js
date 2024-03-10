@@ -46,12 +46,33 @@ const foundSchema = new mongoose.Schema({
   }
 })
 
+const messReviewSchema = new mongoose.Schema({
+  name: {
+    type: String,
+    required: true
+  },
+  rollNo: {
+    type: String,
+    required: true
+  },
+  description: {
+    type: String,
+    required: true
+  },
+  hostel: {
+    type: String,
+    required: true
+  }
+})
 
 const Lost = mongoose.model('Lost', lostSchema);
-const Found = mongoose.model('Found', foundSchema)
+const Found = mongoose.model('Found', foundSchema);
+const MessReview = mongoose.model('MessReview', messReviewSchema);
+
 module.exports= {
   Lost,
-  Found
+  Found,
+  MessReview
 }
 
 // const groupSchema = new mongoose.Schema({

@@ -8,9 +8,70 @@
   to { width: 100%; }
 }
 
-.lost-heading {
+footer {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.college-intro {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.chats{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nav-bar{
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.group-title {
   font-family: "Chakra Petch", sans-serif;
-  font-weight: 300;
+  font-weight: 700;
+  font-style: normal
+}
+
+.chat-room-title, .leave-btn{
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.scheduler-text {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+.lost-list{
+  font-family: "Kanit", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.lost-items{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lost-heading{
+  font-family: "Chakra Petch", sans-serif;
+  font-weight: 700;
+  font-style: normal
+}
+
+.card-info{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 

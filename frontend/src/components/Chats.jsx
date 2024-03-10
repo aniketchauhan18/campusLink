@@ -61,15 +61,15 @@ function Chats() {
   }
   
   return (
-    <div className='bg-zinc-900 h-full flex justify-center items-center text-black'>
+    <div className='bg-zinc-900 h-full flex justify-center items-center text-black chats'>
       <div className='flex flex-col border m-3 h-screen w-full m-3 rounded mb-20'>
         <div className='flex p-3 justify-between items-center'>
-          <div className='text-4xl text-white'>
+          <div className='text-4xl text-white chat-room-title'>
             CHAT ROOMS
           </div>
           <Link 
             to={'/groups'}
-            className='bg-zinc-300 p-3 rounded hover:bg-zinc-700 hover:text-white transition duration-300 ease-in-out '
+            className='bg-zinc-300 p-3 rounded hover:bg-zinc-700 hover:text-white transition duration-300 ease-in-out leave-btn'
           >
             Leave Room
           </Link>

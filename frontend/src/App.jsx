@@ -11,6 +11,9 @@ import HomePage from './components/HomePage'
 import Found from './components/Found'
 import FoundListPage from './pages/FoundListPage'
 import LostListPage from './pages/LostListPage'
+import Footer from './components/Footer'
+import Bot from './components/Bot'
+import MessReview from './pages/MessReview'
 
 function App() {
   const { user } = useAuth0();
@@ -28,9 +31,12 @@ function App() {
         <Route path='/foundquery' element={<Found />} />
         <Route path='/foundlist' element={<FoundListPage />} />
         <Route path='/lostlist' element={<LostListPage />}/>
+        <Route path='/talkwithbot' element={<Bot />} />
+        <Route path='/messreview' element={<MessReview />}/>
       </Routes>
+      <Footer />
     </div>
   )
 }
 
-export default App
+export default App;
