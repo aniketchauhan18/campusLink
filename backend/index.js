@@ -10,6 +10,8 @@ const lostRoutes = require('./routes/lost')
 const foundRoutes = require('./routes/found')
 const messReviewRoutes = require('./routes/messReview')
 
+const PORT = 3000 | process.env.PORT
+
 
 app.use(cors());
 app.use(express.json())
@@ -77,6 +79,6 @@ io.on('connection', (socket) => {
   });
 })
 
-server.listen(3000, () => {
+server.listen(PORT, () => {
   console.log("Server is running")
 })
