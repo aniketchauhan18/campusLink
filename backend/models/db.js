@@ -1,9 +1,7 @@
+require('dotenv').config()
 const { default: mongoose } = require('mongoose');
 
-const encodedPassword = encodeURIComponent("2004@Niket");
-
-// Use the encoded password in the connection string
-mongoose.connect(`mongodb+srv://workwithaniket18:${encodedPassword}@cluster0.fty46m3.mongodb.net/college`);
+mongoose.connect(process.env.MONGODB_URL);
 
 const lostSchema = new mongoose.Schema({
   name: {

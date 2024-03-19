@@ -16,7 +16,7 @@ const PORT = 3000 | process.env.PORT
 app.use(cors());
 app.use(express.json())
 
-const server = http.createServer(app); // create the server
+const server = http.createServer(app);
 app.use('/groups', groupRoutes);
 app.use('/lost', lostRoutes);
 app.use('/found',foundRoutes)
